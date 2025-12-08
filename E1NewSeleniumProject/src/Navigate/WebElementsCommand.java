@@ -28,9 +28,6 @@ public class WebElementsCommand {
 		searchBox.sendKeys("Selenium",Keys.ENTER);
 		
 		
-		
-		
-
 	}
 
 }
