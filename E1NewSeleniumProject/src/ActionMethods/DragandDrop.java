@@ -37,6 +37,7 @@ public class DragandDrop {
 		act.dragAndDrop(LaptopCoverSrc, LaptopAccTargetLocator).perform();
 		act.dragAndDrop(laptopchargersrc, LaptopAccTargetLocator).perform(); 
 		
+		
 	}
 
 }

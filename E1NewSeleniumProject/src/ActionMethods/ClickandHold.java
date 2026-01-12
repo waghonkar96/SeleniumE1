@@ -27,7 +27,7 @@ public class ClickandHold {
 		Actions act = new Actions(driver);				//to create the object of Actions class
 		act.clickAndHold(elementtoHold).perform();		//to perform click and hold operations
 		
-		//Thread.sleep(5500);
+		Thread.sleep(5500);
 		act.release(elementtoHold);
 		driver.close();
 		

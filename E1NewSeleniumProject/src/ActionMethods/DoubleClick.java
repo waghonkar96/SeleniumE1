@@ -20,7 +20,7 @@ public class DoubleClick {
 		driver.findElement(By.xpath("//section[text()='Button']")).click();
 		driver.findElement(By.xpath("//a[text()='Double Click']")).click();
 		
-		WebElement dbc = driver.findElement(By.id("btn20"));
+		WebElement dbc = driver.findElement(By.id("btn_a"));
 		
 		Actions act = new Actions(driver);
 		

@@ -31,6 +31,7 @@ public class ByExplicittypecasting {
 		//OR
 		
 		FileHandler.copy(scr, dest);
+		//FileHandler.delete(dest);
 
 	}
 
