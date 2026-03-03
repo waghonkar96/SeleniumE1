@@ -20,8 +20,6 @@ public class adminLogin {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-
-
 	public String adminpage()
 	{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("EmailAddress"))).sendKeys("bhagyashri.anbhule@sdaemon.co.in");
@@ -49,10 +47,7 @@ public class adminLogin {
 	}
 	public void ComplaintsOverview()
 	{
-
 		WebElement complaintDropdown = driver.findElement(By.xpath("//select[@class='shadow-sm form-select form-select-sm']"));
-		Select select = new Select(complaintDropdown);
-		
-		
+		Select select = new Select(complaintDropdown);	
 	}
 }
