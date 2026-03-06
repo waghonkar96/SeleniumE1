@@ -1,6 +1,7 @@
 package CollectionFramework;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo1 {
@@ -34,8 +35,40 @@ public class ArrayListDemo1 {
 		al.add(1, "Welcome21");
 		System.out.println("elements after insertion: "+ al); //[100, Welcome21, O, 332.43, true]
 		
+		//retrive a specific element from array list
+		System.out.println(al.get(3));	//332.43 '3' is index
 		
-
+		//Replace element
+		al.set(1, "C#");
+		System.out.println("After replacing element: "+al);
+		
+		//Verify particluar element is present- contains()-true or false
+		System.out.println("C# is in the list: "+al.contains("C#"));
+		
+		//isEmpty() - true or false
+		System.out.println(al.isEmpty());
+		
+		//for loop
+		System.out.println("Reading elements using for loop");
+		for(int i=0; i<al.size(); i++) 
+		{
+			System.out.println(al.get(i));
+		}
+		
+		//for.. each loop
+		System.out.println("Reading elements using for-each loop");
+		for(Object e : al) 
+		{
+			System.out.println(e);
+		}
+		
+		//iterater method
+		System.out.println("Reading elements using Iterator");
+		Iterator it=al.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
 	}
 
 }
